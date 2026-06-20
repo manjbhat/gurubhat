@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guru Bhat</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    line-height:1.6;
+    color:#333;
+}
+
+header{
+    background:#3B80A8;
+    color:white;
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+}
+
+.hero{
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url('https://images.unsplash.com/photo-1529107386315-e1a2ed48a620');
+    background-size:cover;
+    background-position:center;
+    height:90vh;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:1.3rem;
+    max-width:700px;
+}
+
+.btn{
+    background:#3B80A8;
+    color:white;
+    padding:14px 30px;
+    text-decoration:none;
+    border-radius:5px;
+    margin-top:25px;
+    display:inline-block;
+}
+
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    color:#c8102e;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:10px;
+}
+
+.policies{
+    background:#f5f5f5;
+}
+
+.policy-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.volunteer{
+    background:#4B4759;
+    color:white;
+    text-align:center;
+}
+
+form{
+    max-width:600px;
+    margin:auto;
+}
+
+input, textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    background:#3B80A8;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+@media(max-width:768px){
+    .about{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:2.5rem;
+    }
+
+    header{
+        flex-direction:column;
+    }
+
+    nav{
+        margin-top:15px;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Guru Bhat</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#policies">Policies</a>
+        <a href="#volunteer">Volunteer</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Building a Stronger Canada Together</h1>
+    <p>
+        Dedicated to affordable housing, stronger healthcare,
+        sustainable growth, and creating opportunities for every family.
+    </p>
+    <a href="#volunteer" class="btn">Join the Campaign</a>
+</section>
+
+<section id="about">
+    <h2 class="section-title">Meet Oakwood Guru	</h2>
+    <div class="about">
+        <img src="oakwoodguru.jpg" alt="Guru Bhat">
+        
+        <div>
+        
+        	<h3>Down-to-Earth. Hardworking. Ready to Serve Ward 4.
+Guru Bhat is a local Oakwood business owner, community volunteer, advocate, husband, and father who is ready to be a strong voice for Ward 4.
+</h3>
+                    <br>
+            <p>
+Many people know Guru through his Oakwood store, where his simple belief is:
+“Walk in as a customer, walk out as a friend.”
+</p>
+            <br>
+            <p>
+That is the kind of person Guru is — approachable, friendly, down-to-earth, and always willing to listen.
+</p>
+            <br>
+            <p>
+Guru understands that trust is not built through slogans. Trust is built through hard work, honesty, respect, and showing up for people when they need help.
+A Life Built on Hard Work
+</p>
+            <br>
+            <p>
+<b>Guru’s story is rooted in hard work. </b>
+</p>
+            <br>
+            <p>
+Before becoming a business owner, Guru had many different job experiences and worked in factories, gas stations, customer service, insurance, banking, and business operations. He has worked day shifts, night shifts, long shifts, and difficult schedules. Guru understands what it means to work hard, manage pressure, and stay positive and focused when life presents obstacles.
+</p>
+            <br>
+            <p>
+Even today, as a small business owner in Oakwood, Guru often works 12 to 15 hours a day serving customers, managing operations, solving problems, and supporting the community.
+</p>
+            <br>
+            <p>
+
+These real-life experiences have shaped Guru into who he is today.  He understands the challenges working families, seniors, farmers, commuters, and small-business owners are facing.  He also understands that people are doing their best every day to manage rising costs and daily responsibilities.
+</p>
+            <br>
+            <p>
+Family, Responsibility, and Community
+</p>
+            <br>
+            <p>
+
+Guru is a husband and a father.   His wife is also a businesswoman, and together they understand the pressures that many families face — long working hours, rising costs, family responsibilities, and the important need to build a better future for the next generation. 
+</p>
+            <br>
+            <p>
+
+As being the Owner of Oakwood Groceries, and having many conversations with customers, Guru has first hand knowledge that families in Ward 4 need practical support: safe roads, access to child care, better recreation opportunities for children, support for seniors, and clear communication from City Hall.
+</p>
+            <br>
+            <p>
+For Guru, public service is personal. He wants Ward 4 to be a place where families can grow, children can learn, seniors can feel safe, small businesses can survive, farmers are respected, and residents feel connected.   
+Education, Business, and Professional Experience
+</p>
+            <br>
+            <p>
+
+Guru believes education and real-world experience must work together.
+</p>
+            <br>
+            <p>
+He holds a Master’s Degree in Business and has also studied business management and optician-related training.  Combine this with the real-life experience gained from his previous jobs, and his level of commitment to follow through on his tasks, Guru feels that he will be a strong voice for Ward 4.  His background gives him a strong understanding of customer service, financial responsibility, operations, planning, and people-focused problem solving, but most of all doing all of this respectfully.  Prior to opening his business in Oakwood, Guru worked with major organizations including BMO, Rogers, and Lombard Insurance. Through these roles, he gained valuable management experience in banking, financial analysis, insurance, customer care, risk management, service delivery, and business operations.
+</p>
+            <br>
+            <p>
+
+This background helps Guru navigate and understand budgets, accountability, policy, process, and the importance of making responsible, respectful decisions with public money.
+</p>
+            <br>
+            <p>
+
+As a local Oakwood Business Owner Who Understands Ward 4.
+</p>
+            <br>
+            <p>
+
+ As the owner and operator of a convenience and grocery business in Oakwood, Guru knows what it means to manage a business on small profit margins, rising costs, staffing challenges, supply issues, property concerns, customer needs, and completing daily responsibilities. Oakwood Grocery store is more than a business. It is a local gathering spot where residents stop, talk, share concerns, ask questions, and support one another.
+Through daily conversations with residents, Guru hears directly about the issues that matter in Ward 4 — roads, wells, septic, ditches, culverts, seniors’ needs, child- care, local businesses, lake communities, safety, and the need for better communication and transparency from City Hall.
+</p>
+            <br>
+            <p>
+<b>Guru believes Ward 4 needs a councillor who is accessible, practical, respectful, fiscally responsible and ready to work directly with residents. </b>
+</p>
+            <br>
+            <p>
+
+<b>Proven Advocacy and Government Experience</b>
+</p>
+            <br>
+            <p>
+
+Guru has already shown that he can bring people together and get respectful attention at the Government level.
+</p>
+            <br>
+            <p>
+Through his leadership role with iLCO Ontario — Independent Liquor Convenience Operators Association Ontario — Guru helped unite more than 250 independent stores across Ontario. Guru and his team worked with store owners, operators, MPPs, MPs, ministry offices, and government representatives.  These inititives advocated for fairness,  and focused on helping small rural retailers in Ontario become more sustainable and better positioned to survive in the changing marketplace.  This created stronger support for small operators.  This advocacy work required organization, patience, communication, documentation, and persistence. It also required understanding how government works — how to prepare issues properly, speak with decision-makers, follow process, and push for practical results.
+</p>
+            <br>
+            <p>
+Guru understands governance, policy, procedures, and the importance of bringing people to the table in a respectful and effectively, in a result- oriented manor.
+He believes the same approach is needed at City Hall: listen to residents, understand the issue, prepare properly, work with the right people, and follow up until residents get clear answers.
+</p>
+            <br>
+            <p>
+<b>Community First</b>
+</p>
+            <br>
+            <p>
+
+Guru is actively involved in community and civic work. Through volunteer efforts and community organizations, he has helped bring people together, support public engagement, organize outreach programs, and encourage more people to participate in civic life.
+</p>
+            <br>
+            <p>
+He believes strong communities are built through respect, hard work, communication, and personal connection.  
+</p>
+            <br>
+            <p>
+<b>For Guru, public service is not about titles. It is about showing up, answering calls, listening carefully, helping people navigate problems, and standing up for the community. </b>
+</p>
+            <br>
+            <p>
+
+<b>Why Guru Is Running: </b>
+</p>
+            <br>
+            <p>
+
+Guru is running for Ward 4 Councillor because he believes our community deserves a strong, honest, hardworking, and accessible voice. Ward 4 includes rural families, seniors, farmers, lake communities, small businesses, commuters, young families, and long-time residents. Each area has different needs, but everyone deserves respect, fair service, and clear communication from City Hall.
+</p>
+            <br>
+            <p>
+
+<b>Guru’s priorities are simple: </b></p>
+            <br>
+            <p>
+
+Better roads and safer rural infrastructure</p>
+            <br>
+            <p>
+•	
+Honest communication on wells, septic, ditches, culverts, and local services</p>
+            <br>
+            <p>
+•	
+Stronger support for seniors and aging residents</p>
+            <br>
+            <p>
+•	
+More focus on child- care, youth programs, parks, and family needs</p>
+            <br>
+            <p>
+•	
+Support for small businesses, farmers, and local worke</p>
+            <br>
+            <p>
+•	
+Fiscal Responsibility and spending, creating a better value for taxpayers</p>
+            <br>
+            <p>
+•	
+Practical solutions instead of political promis</p>
+            <br>
+            <p>
+•	
+A councillor who listens, responds, and follows up</p>
+            <br>
+            <p>
+•	A Councillor Who Will Be Accessible
+</p>
+            <br>
+            <p>
+
+<b>Guru believes residents should not only hear from their councillor during election time.  If elected, he will create a Ward 4 Community Access Point through his local business in Oakwood, where residents can bring concerns, ask questions, and get help connecting with the right City department or service.  </b>
+</p>
+            <br>
+            <p>This will not replace City Hall, but it will give Ward 4 residents a local place to be heard.  Guru will also hold a Ward 4 Monthly Community Roundtable in different parts of the ward, so residents from Oakwood, Little Britain, Woodville, Sonya, Ball Point, Washburn Island, Valentia, Mariposa, and surrounding rural areas have a regular chance to be heard and table their issues.
+</p>
+            <br>
+            <p>
+
+<b>Guru’s promise is simple: </b>he will be available, he will listen, he will follow up, and he will keep residents informed.
+</p>
+            <br>
+            <p>
+A Strong Local Voice for Ward 4Guru knows that trust is earned through action.
+He is ready to bring his hard work, education, business experience, financial knowledge, advocacy background, and community commitment to serve Ward 4 with honesty, energy, and respect. Guru Bhat is not running to be a politician. <b>He is running to be a strong local voice for the people of Ward 4. </b>
+</p>
+            <br>
+            <p>
+
+        </div>
+        
+        
+        
+        <div>
+            <h3>My Commitment to Ward 4</h3>
+                        <br>
+            <p>
+Ward 4 is not one single community. It is made up of rural villages, lake communities, farming families, seniors, small businesses, commuters, young families, children, and long-time residents who have helped build this area over many years.
+</p>
+            <br>
+            <p>
+From Oakwood and Little Britain to Woodville, Sonya, Ball Point, Washburn Island, Valentia, Mariposa, and the Lake Scugog area, every part of Ward 4 deserves to be heard, respected, and properly represented.
+</p>
+            <br>
+            <p>
+I am running because I believe Ward 4 needs a councillor who will listen, follow up, and focus on practical local issues that affect people every day.
+</p>
+            <br>
+            <p>
+<b>## Roads, Ditches, Culverts, Wells, Septic, and Rural Infrastructure</b>
+</p>
+            <br>
+            <p>
+Ward 4 is a rural ward. Many homes and properties depend on wells, septic systems, ditches, culverts, rural roads, and private services. Not every area has municipal water or sewer, and I understand that large infrastructure promises can be costly and difficult.
+</p>
+            <br>
+            <p>
+<b>I will not make false promises. </b>
+</p>
+            <br>
+            <p>
+My commitment is to be honest with residents, ask the right questions at City Hall, push for clear information, and help residents understand what options may be available to them when confronted with concerns or issues.  I will advocate for better rural infrastructure planning, clearer communication, and stronger follow-up on issues involving roads, ditches, culverts, flooding concerns, stormwater, septic-related concerns, well-water concerns, and rural service levels.
+</p>
+            <br>
+            <p>
+When residents raise these issues, they deserve answers, timelines, and respect — not silence or confusion. </p>
+            <br>
+            <p>
+<b>## Support for Seniors and Aging Residents</b>
+</p>
+            <br>
+            <p>
+Ward 4 has many seniors and long-time residents who want to stay in their homes, stay connected, and feel safe in their community. I will work to improve communication about senior services, fraud prevention, elder abuse awareness, accessibility, transportation options, and local recreation opportunities. 
+</p>
+            <br>
+            <p>
+Seniors should not feel forgotten. They deserve respect, support, and a councillor who will listen and help connect them with the right services.
+</p>
+            <br>
+            <p>
+<b>## Community Safety and Targeted Crime Prevention</b>
+</p>
+            <br>
+            <p>
+Residents are concerned about scams, theft, property crime, and safety in rural areas. Seniors can be especially vulnerable to fraud and financial abuse.
+</p>
+            <br>
+            <p>
+I will work with police, emergency responders, community organizations, seniors groups, and residents to support more education, prevention, and communication.  City Hall cannot replace the police, but councillors can help bring the right people together and make sure community concerns are heard.
+</p>
+            <br>
+            <p>
+
+<b>## More Child-Care Options for Working Families</b>
+</p>
+            <br>
+            <p>
+Ward 4 is home to many working families. Many parents leave early in the morning and drive long distances for work, sometimes 100 to 150 kilometres a day. For these families, access to reliable child care, before-school programs, after-school programs, and summer programs is not a luxury — it is an essential real need.  Parents should not have to struggle to find child care far away outside of their local community.  I will advocate for more licensed child-care space, before-school and after-school programs, and summer programs in Ward 4.
+</p>
+            <br>
+            <p>
+As councillor, I will work with City staff, school boards, child-care providers, community groups, and other levels of government to look for practical ways to bring more child-care options closer to “home”.  This could include reviewing City-owned spaces, community halls, schools, recreation spaces, and partnership opportunities where child-care or children’s programming may be possible.
+</p>
+            <br>
+            <p>
+
+
+<b>## Better Parks, Recreation, and Places for Kids</b>
+</p>
+            <br>
+            <p>
+Children in Ward 4 need more safe, active, and positive places to spend time. Families should not always have to drive to Lindsay or another larger centre for every program or activity.  I will support better playgrounds, park upgrades, safe recreation areas, sports opportunities, and community spaces where children and families can gather.
+</p>
+            <br>
+            <p>
+Small communities need safe parks, clean public spaces, playgrounds, trails, halls, and recreation areas. These spaces matter for children, seniors, families, and community events.
+</p>
+            <br>
+            <p>
+<b>## Youth Programs and Future Skills</b>
+</p>
+            <br>
+            <p>
+Our children need more than playgrounds. They also need opportunities to learn, build confidence, and prepare for the future.  I will support partnerships that bring more programs for kids and youth into Ward 4.  Such as: sports, arts, music, tutoring, coding, robotics, AI learning, leadership programs, volunteer opportunities, summer camps, and school-break activities.  Technology is changing quickly, and rural kids should not be left behind, yet at the same time need to stay active and be “children”.   Children in Ward 4 deserve access to modern learning opportunities close to home.
+</p>
+            <br>
+            <p>
+<b>## Small Business, Farming, and Local Economy</b>
+</p>
+            <br>
+            <p>
+As a small business owner, I understand rising costs, staffing challenges, stress management, supply issues, taxes, permits, and red tape. I also understand that farmers, tradespeople, contractors, and local businesses are the backbone of Ward 4.I will bring a practical business voice to council and support decisions that help local businesses survive and grow, and are also fiscally responsible.  
+</p>
+            <br>
+            <p>
+Ward 4 needs a councillor who understands both household budgets and business realities.
+</p>
+            <br>
+            <p>
+<b>## Ward 4 Community Access Point</b>
+</p>
+            <br>
+            <p>
+If elected, I will make myself accessible to residents on a regular basis. My local business in Oakwood, Oakwood Grocery, already serves many residents every day. I want to use that connection in a positive way by creating a Ward 4 Community Access Point where residents can bring concerns, ask questions, share local issues, and get help connecting with the right City department or service.   This will not replace City Hall, but it will give Ward 4 residents a local place to be heard. Residents should not have to feel lost when they have a concern about roads, bylaws, permits, parks, seniors’ support, community safety, child care, wells, septic, lake issues, or local services, or any other issues they are facing. I will help listen and help guide concerns to the right place and follow up where possible.
+</p>
+            <br>
+            <p>
+
+<b>## Monthly Ward 4 Community Roundtable</b>
+</p>
+            <br>
+            <p>
+Along with the Ward 4 Community Access Point, I will also hold a Ward 4 Monthly Community Roundtable. This will be a regular monthly meeting where residents can speak directly with me, raise concerns, ask questions, and discuss local issues. I do not believe residents should only hear from their councillor during election time. A councillor should be available, involved, visible, and accountable throughout the full term. These meetings will rotate across Ward 4 communities so residents in Oakwood, Little Britain, Woodville, Sonya, Ball Point, Washburn Island, Valentia, Mariposa, and surrounding rural areas all have a chance to participate. Some meetings may focus on specific topics such as seniors’ concerns, roads and rural infrastructure, Lake Scugog and shoreline issues, child care, youth programs, parks, small business, farming, and community safety.
+</p>
+            <br>
+            <p>
+<b>My promise is simple: I will be available, I will listen, I will follow up, and I will keep residents informed. </b>
+</p>
+            <br>
+            <p>
+<b>## A Family-Friendly, Senior-Friendly, and Rural-Focused Ward 4</b>
+</p>
+            <br>
+            <p>
+Ward 4 should not only be a place to live. It should be a place where families can grow, children can learn, seniors can feel safe, small businesses can survive, all tax payers are respected, and residents can stay connected.
+</p>
+            <br>
+            <p>
+I am running to be a strong local voice for Ward 4 — focused on local issues, honest answers, real follow-up, and practical solutions.
+</p>
+            <br>
+            <p>
+
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="policies" class="policies">
+    <h2 class="section-title">Key Priorities</h2>
+
+    <div class="policy-grid">
+        <div class="card">
+            <h3>🏠 Affordable Housing</h3>
+            <p>Increase housing supply and support first-time home buyers.</p>
+        </div>
+
+        <div class="card">
+            <h3>🏥 Healthcare</h3>
+            <p>Reduce wait times and improve access to family doctors.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌱 Environment</h3>
+            <p>Invest in clean energy and sustainable infrastructure.</p>
+        </div>
+
+        <div class="card">
+            <h3>💼 Jobs & Economy</h3>
+            <p>Support small businesses and create skilled jobs.</p>
+        </div>
+    </div>
+</section>
+
+<section id="volunteer" class="volunteer">
+    <h2>Join Our Movement</h2>
+    <p>Volunteer, donate, or help spread the message.</p>
+    <a href="#contact" class="btn">Get Involved</a>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact the Campaign</h2>
+
+    <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>
+        Authorized by the Official Agent of Sarah Thompson Campaign.
+        © 2026 All Rights Reserved.
+    </p>
+</footer>
+
+<script>
+document.querySelector("form").addEventListener("submit", function(e){
+    e.preventDefault();
+    alert("Thank you for contacting the campaign!");
+});
+</script>
+
+</body>
+</html>
