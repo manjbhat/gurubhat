@@ -1080,5 +1080,41 @@ footer{
     });
 </script>
 
+<!-- ---------- Event Popup ---------- -->
+<div id="event-modal" style="position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.72);padding:16px;opacity:0;transition:opacity .35s;">
+    <div style="position:relative;max-width:680px;width:100%;border-radius:14px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.5);">
+        <img src="event.jpeg" alt="Community BBQ — Meet Guru — August 30, 2026" style="width:100%;height:auto;display:block;">
+        <!-- Close button -->
+        <button onclick="closeModal()" aria-label="Close" style="position:absolute;top:10px;right:10px;width:36px;height:36px;border-radius:50%;border:none;background:rgba(0,0,0,0.65);color:#fff;font-size:1.2rem;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s;" onmouseover="this.style.background='#c00'" onmouseout="this.style.background='rgba(0,0,0,0.65)'">&times;</button>
+        <!-- CTA strip -->
+        <div style="background:var(--lake-deep,#0d2b4e);padding:14px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;">
+            <p style="color:#fff;margin:0;font-size:.95rem;">📅 <strong>Sun Aug 30</strong> &nbsp;·&nbsp; 1–5 PM &nbsp;·&nbsp; Mariposa Community Hall, Oakwood</p>
+            <button onclick="closeModal()" style="background:var(--gold,#c5a43a);color:#0d2b4e;border:none;border-radius:20px;padding:8px 20px;font-weight:700;cursor:pointer;white-space:nowrap;font-size:.9rem;">Enter Site &rarr;</button>
+        </div>
+    </div>
+</div>
+
+<script>
+(function(){
+    var modal = document.getElementById('event-modal');
+    // Fade in on load
+    window.addEventListener('load', function(){
+        setTimeout(function(){ modal.style.opacity='1'; }, 200);
+    });
+    // Close on backdrop click
+    modal.addEventListener('click', function(e){
+        if(e.target === modal) closeModal();
+    });
+    // Close on Escape
+    document.addEventListener('keydown', function(e){
+        if(e.key === 'Escape') closeModal();
+    });
+    window.closeModal = function(){
+        modal.style.opacity='0';
+        setTimeout(function(){ modal.style.display='none'; }, 350);
+    };
+})();
+</script>
+
 </body>
 </html>
