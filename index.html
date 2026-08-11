@@ -1007,7 +1007,7 @@ footer{
 
 <script>
 (function(){
-    let cur=0, timer;
+    let cur=0;
     const slides=document.querySelectorAll('.t-slide');
     const dots=document.querySelectorAll('.t-dot');
     function show(n){
@@ -1017,10 +1017,8 @@ footer{
         slides[cur].style.display='block';
         dots[cur].classList.add('active');
     }
-    window.moveSlide=function(d){clearInterval(timer);show(cur+d);startAuto();}
-    window.goSlide=function(n){clearInterval(timer);show(n);startAuto();}
-    function startAuto(){timer=setInterval(()=>show(cur+1),4500);}
-    startAuto();
+    window.moveSlide=function(d){show(cur+d);}
+    window.goSlide=function(n){show(n);}
 })();
 </script>
 
