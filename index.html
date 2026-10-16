@@ -658,7 +658,7 @@ footer{
 <style>
 #flyerPopup{position:fixed;inset:0;z-index:1000;background:rgba(14,30,38,.82);display:flex;align-items:center;justify-content:center;padding:16px;}
 #flyerPopup.hidden{display:none;}
-#flyerPopup .fp-box{position:relative;background:#fff;border-radius:14px;width:100%;max-width:560px;max-height:calc(100vh - 32px);display:flex;flex-direction:column;box-shadow:0 20px 60px rgba(0,0,0,.4);overflow:hidden;}
+#flyerPopup .fp-box{position:relative;background:#fff;border-radius:14px;width:100%;max-width:860px;max-height:calc(100vh - 32px);display:flex;flex-direction:column;box-shadow:0 20px 60px rgba(0,0,0,.4);overflow:hidden;}
 #flyerPopup .fp-scroll{overflow-y:auto;-webkit-overflow-scrolling:touch;}
 #flyerPopup .fp-scroll img{width:100%;height:auto;display:block;}
 #flyerPopup .fp-scroll img + img{border-top:6px solid var(--cream);}
@@ -673,9 +673,11 @@ body.fp-open{overflow:hidden;}
     <div class="fp-box">
         <button class="fp-close" id="fpClose" aria-label="Close">&times;</button>
         <div class="fp-scroll">
-            <img src="roadshow_flyer.jpeg" alt="Ward 4 Candidates Travelling Road Show, Stop 3 — October 15, 2026 at Oakwood Lions Club, 1008 Eldon Rd, Oakwood. Doors open 6:30pm, Meet &amp; Greet begins 7:00pm.">
+            <img src="note_card_front.jpeg" alt="A personal note from Guru Bhat to his Ward 4 neighbours, with his 3 commitments. Voting October 16 to 26.">
+            <img src="note_card_back.jpeg" alt="2026 voting information: voting opens Friday October 16 at 9:00 AM and closes Monday October 26 at 8:00 PM, by internet or telephone using your Voting PIN.">
         </div>
-        <div class="fp-bar" style="justify-content:center;">
+        <div class="fp-bar">
+            <span class="fp-hint">Scroll for voting information &darr;</span>
             <button class="btn" id="fpEnter">Enter Site &rarr;</button>
         </div>
     </div>
@@ -699,8 +701,8 @@ body.fp-open{overflow:hidden;}
         <a href="#about">About</a>       
         <a href="#commitment">Commitment</a>
         <a href="#volunteer">Volunteer</a>
-        <a href="#election">Election Info</a>
         <a href="#testimonials">Testimonials</a>
+        <a href="#election">Election Info</a>
         <a href="#gallery">Gallery</a>
         <a href="#events">Events</a>
         <a href="#social">Social Media</a>
@@ -943,143 +945,6 @@ body.fp-open{overflow:hidden;}
     </div>
 </section>
 
-<!-- ---------- Events ---------- -->
-<section id="events" style="background:#f7f8fa;padding:60px 0;">
-    <div class="container">
-        <div class="section-head">
-            <span class="eyebrow-tag">Mark Your Calendar</span>
-            <h2>Upcoming Events</h2>
-        </div>
-        <div style="max-width:620px;margin:36px auto 0;border-radius:14px;overflow:hidden;box-shadow:0 6px 28px rgba(0,0,0,0.12);">
-            <img src="event1.jpeg" alt="Ward 4 Candidates Travelling Road Show — September 21, October 1 & October 15, 2026" style="width:100%;height:auto;display:block;">
-        </div>
-        <div style="max-width:680px;margin:20px auto 0;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
-            <div style="flex:1;min-width:180px;background:var(--lake-deep);color:#fff;border-radius:10px;padding:16px 18px;text-align:center;">
-                <p style="margin:0 0 4px;font-size:.75rem;opacity:.7;text-transform:uppercase;letter-spacing:.06em;">Stop 1</p>
-                <p style="margin:0 0 2px;font-weight:700;font-size:.95rem;">Sept 21, 2026 · 6:30 PM</p>
-                <p style="margin:0;font-size:.85rem;opacity:.85;">Valentia Community Hall<br>102 Elm Tree Rd, Little Britain</p>
-            </div>
-            <div style="flex:1;min-width:180px;background:var(--lake-deep);color:#fff;border-radius:10px;padding:16px 18px;text-align:center;">
-                <p style="margin:0 0 4px;font-size:.75rem;opacity:.7;text-transform:uppercase;letter-spacing:.06em;">Stop 2</p>
-                <p style="margin:0 0 2px;font-weight:700;font-size:.95rem;">Oct 1, 2026 · 6:30 PM</p>
-                <p style="margin:0;font-size:.85rem;opacity:.85;">Woodville Legion Hall<br>126 Queen St, Woodville</p>
-            </div>
-            <div style="flex:1;min-width:180px;background:var(--lake-deep);color:#fff;border-radius:10px;padding:16px 18px;text-align:center;">
-                <p style="margin:0 0 4px;font-size:.75rem;opacity:.7;text-transform:uppercase;letter-spacing:.06em;">Stop 3</p>
-                <p style="margin:0 0 2px;font-weight:700;font-size:.95rem;">Oct 15, 2026 · 6:30 PM</p>
-                <p style="margin:0;font-size:.85rem;opacity:.85;">Oakwood Lions Club<br>1008 Eldon Rd, Oakwood</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<!-- ---------- Social Media ---------- -->
-<section id="social" style="background:#f7f8fa;padding:60px 0;">
-    <div class="container">
-        <div class="section-head">
-            <span class="eyebrow-tag">Stay Connected</span>
-            <h2>Social Media</h2>
-            <p style="color:var(--ink-soft);">Follow along and stay up to date with the Ward 4 campaign.</p>
-        </div>
-
-        <div style="max-width:420px;margin:0 auto;">
-
-            <!-- Facebook card with border -->
-            <div style="border-radius:18px;overflow:hidden;box-shadow:0 8px 40px rgba(24,119,242,0.18),0 2px 12px rgba(0,0,0,0.08);border:2.5px solid #1877F2;background:#fff;">
-
-                <!-- Card header bar -->
-                <div style="background:linear-gradient(90deg,#1877F2,#42a5f5);padding:18px 24px;display:flex;align-items:center;gap:14px;">
-                    <div style="width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,0.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="white">
-                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
-                        </svg>
-                    </div>
-                    <div>
-                        <p style="margin:0;color:#fff;font-weight:700;font-size:1rem;line-height:1.2;">Guru Bhat — Ward 4 Councillor Candidate</p>
-                        <p style="margin:0;color:rgba(255,255,255,0.8);font-size:.62rem;">Facebook Page</p>
-                    </div>
-                </div>
-
-                <!-- Facebook Page Plugin embed (full width, centered) -->
-                <div id="fb-root"></div>
-                <script async defer crossorigin="anonymous"
-                    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v21.0">
-                </script>
-                <div style="background:#fff;display:flex;justify-content:center;align-items:flex-start;width:100%;min-height:500px;overflow:hidden;">
-                    <iframe
-                        name="fa523b3fcbbdd7eb2"
-                        width="560"
-                        height="500"
-                        data-testid="fb:page Facebook Social Plugin"
-                        title="fb:page Facebook Social Plugin"
-                        frameborder="0"
-                        allowtransparency="true"
-                        allowfullscreen="true"
-                        scrolling="no"
-                        allow="encrypted-media"
-                        src="https://www.facebook.com/v21.0/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df34d76260318b6615%26domain%3Ddevelopers.facebook.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Ff5e0a5935f878cbe5%26relation%3Dparent.parent&amp;container_width=766&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61591042955366%26rdid%3Dfu9HldX97tQASPWd%26share_url%3Dhttps%253A%252F%252Fwww.facebook.com%252Fshare%252F19MgmdpSnd%252F%23&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline"
-                        style="border:none;display:block;width:560px;max-width:100%;height:500px;">
-                    </iframe>
-                </div>
-
-                <!-- Card footer -->
-                <div style="padding:18px 24px;border-top:1px solid #e8f0fe;background:#f0f4ff;text-align:center;">
-                    <a href="https://www.facebook.com/profile.php?id=61591042955366"
-                       target="_blank" rel="noopener"
-                       style="display:inline-flex;align-items:center;gap:10px;background:#1877F2;color:#fff;border-radius:50px;padding:12px 28px;font-weight:700;font-size:.97rem;text-decoration:none;box-shadow:0 4px 14px rgba(24,119,242,0.35);"
-                       onmouseover="this.style.boxShadow='0 6px 20px rgba(24,119,242,0.5)'"
-                       onmouseout="this.style.boxShadow='0 4px 14px rgba(24,119,242,0.35)'">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
-                        </svg>
-                        Follow on Facebook
-                    </a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- ---------- Contact ---------- -->
-<section id="contact">
-    <div class="container">
-        <div class="section-head">
-            <span class="eyebrow-tag">Get in touch</span>
-            <h2>Contact the campaign</h2>
-        </div>
-        <div class="contact-card">
-            <h3>Guru Bhat</h3>
-            <p class="role">Candidate for Ward Councillor, Ward 4 &middot; City of Kawartha Lakes</p>
-            <div class="contact-row">&#9993;&nbsp; <a href="mailto:Oakwoodguru@gmail.com">Oakwoodguru@gmail.com</a></div>
-            <div class="contact-row">&#9742;&nbsp; <a href="tel:7056239323">705-623-9323</a></div>
-            <div class="contact-row" style="border-top:none;padding:12px 0;">
-                <a href="https://www.facebook.com/share/1D6XRGDQnM/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Follow Guru Bhat on Facebook" style="display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:rgba(30,60,100,0.12);color:var(--lake-deep);transition:background .2s;" onmouseover="this.style.background='#1877F2';this.style.color='#fff'" onmouseout="this.style.background='rgba(30,60,100,0.12)';this.style.color='var(--lake-deep)'">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ---------- Election Info ---------- -->
-<section id="election" style="background:#fff;padding:60px 0;">
-    <div class="container">
-        <div class="section-head">
-            <span class="eyebrow-tag">How to Vote</span>            
-        </div>
-        <div style="max-width:680px;margin:36px auto 0;background:var(--cream);border-radius:var(--radius);padding:36px 40px;box-shadow:var(--shadow);border-left:5px solid var(--gold);">
-            <h3 style="font-family:'Lora',serif;font-size:1.35rem;color:var(--lake-deep);margin-bottom:14px;">&#128197; Vote Online · October 16–26</h3>
-            <p style="color:var(--ink);line-height:1.75;margin-bottom:14px;">The municipal election takes place <strong>October 26, 2026</strong>. Voting will be open <strong>October 16–26</strong> by internet or phone. You do <strong>not</strong> need to go to a polling station. Every eligible resident of Kawartha Lakes can vote.</p>
-            <p style="color:var(--ink);line-height:1.75;margin-bottom:24px;">More information will be provided ahead of the vote through the City of Kawartha Lakes. You can learn more about the voting process at <a href="https://www.kawarthalakes.ca/election" target="_blank" style="color:var(--lake);font-weight:600;text-decoration:underline;">www.kawarthalakes.ca/election</a>.</p>
-            <a href="https://vreg.registertovoteon.ca/en/home" target="_blank" class="btn" style="display:inline-block;">&#10003; Check if you're registered to vote!</a>
-        </div>
-    </div>
-</section>
-
 <!-- ---------- Testimonials ---------- -->
 <section id="testimonials" style="background:#f7f8fa;padding:60px 0;">
     <div class="container">
@@ -1144,7 +1009,7 @@ body.fp-open{overflow:hidden;}
             </div>
             <div class="t-slide" style="display:none;">
                 <div style="background:#fff;border-radius:14px;box-shadow:0 4px 22px rgba(0,0,0,0.10);overflow:hidden;">
-                    <img src="testimonial11.jpeg" alt="Endorsement from Carolyn Matthews, retired York Regional Police officer and Oakwood resident" style="width:100%;height:auto;display:block;">
+                    <img src="testimonial11.jpeg?v=2" alt="Endorsement from Carolyn Matthews, retired York Regional Police officer and Oakwood resident" style="width:100%;height:auto;display:block;">
                 </div>
             </div>
 
@@ -1199,6 +1064,21 @@ body.fp-open{overflow:hidden;}
     window.goSlide=function(n){show(n);}
 })();
 </script>
+
+<!-- ---------- Election Info ---------- -->
+<section id="election" style="background:#fff;padding:60px 0;">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow-tag">How to Vote</span>            
+        </div>
+        <div style="max-width:680px;margin:36px auto 0;background:var(--cream);border-radius:var(--radius);padding:36px 40px;box-shadow:var(--shadow);border-left:5px solid var(--gold);">
+            <h3 style="font-family:'Lora',serif;font-size:1.35rem;color:var(--lake-deep);margin-bottom:14px;">&#128197; Vote Online · October 16–26</h3>
+            <p style="color:var(--ink);line-height:1.75;margin-bottom:14px;">The municipal election takes place <strong>October 26, 2026</strong>. Voting will be open <strong>October 16–26</strong> by internet or phone. You do <strong>not</strong> need to go to a polling station. Every eligible resident of Kawartha Lakes can vote.</p>
+            <p style="color:var(--ink);line-height:1.75;margin-bottom:24px;">More information will be provided ahead of the vote through the City of Kawartha Lakes. You can learn more about the voting process at <a href="https://www.kawarthalakes.ca/election" target="_blank" style="color:var(--lake);font-weight:600;text-decoration:underline;">www.kawarthalakes.ca/election</a>.</p>
+            <a href="https://vreg.registertovoteon.ca/en/home" target="_blank" class="btn" style="display:inline-block;">&#10003; Check if you're registered to vote!</a>
+        </div>
+    </div>
+</section>
 
 <!-- ---------- Gallery ---------- -->
 <section id="gallery" style="background:#fff;padding:60px 0;">
@@ -1323,6 +1203,116 @@ body.fp-open{overflow:hidden;}
             </div>
             <div style="border-radius:10px;overflow:hidden;box-shadow:0 3px 12px rgba(0,0,0,0.10);aspect-ratio:1/1;">
                 <img src="gallery44.jpeg" alt="Guru Bhat presenting gift basket to local youth at community event" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ---------- Events ---------- -->
+<section id="events" style="background:#f7f8fa;padding:60px 0;">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow-tag">Voting Is Open &middot; Oct 16&ndash;26</span>
+            <h2>A Personal Note &amp; Voting Information</h2>
+        </div>
+        <div style="max-width:820px;margin:36px auto 0;display:flex;flex-direction:column;gap:20px;">
+            <div style="border-radius:14px;overflow:hidden;box-shadow:0 6px 28px rgba(0,0,0,0.12);background:#fff;">
+                <img src="note_card_front.jpeg" alt="A personal note from Guru Bhat to his Ward 4 neighbours, with his 3 commitments: a Ward 4 councillor office, regular community meetings, and regular community updates. Voting October 16 to 26." style="width:100%;height:auto;display:block;">
+            </div>
+            <div style="border-radius:14px;overflow:hidden;box-shadow:0 6px 28px rgba(0,0,0,0.12);background:#fff;">
+                <img src="note_card_back.jpeg" alt="2026 voting information: voting opens Friday October 16 at 9:00 AM and closes Monday October 26 at 8:00 PM, by internet or telephone using your Voting PIN. Voting help at City Hall, 26 Francis St Lindsay; Woodville Library, 78 King St; and Little Britain Library, 9 Arena Rd." style="width:100%;height:auto;display:block;">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ---------- Social Media ---------- -->
+<section id="social" style="background:#f7f8fa;padding:60px 0;">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow-tag">Stay Connected</span>
+            <h2>Social Media</h2>
+            <p style="color:var(--ink-soft);">Follow along and stay up to date with the Ward 4 campaign.</p>
+        </div>
+
+        <div style="max-width:420px;margin:0 auto;">
+
+            <!-- Facebook card with border -->
+            <div style="border-radius:18px;overflow:hidden;box-shadow:0 8px 40px rgba(24,119,242,0.18),0 2px 12px rgba(0,0,0,0.08);border:2.5px solid #1877F2;background:#fff;">
+
+                <!-- Card header bar -->
+                <div style="background:linear-gradient(90deg,#1877F2,#42a5f5);padding:18px 24px;display:flex;align-items:center;gap:14px;">
+                    <div style="width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,0.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="white">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <p style="margin:0;color:#fff;font-weight:700;font-size:1rem;line-height:1.2;">Guru Bhat — Ward 4 Councillor Candidate</p>
+                        <p style="margin:0;color:rgba(255,255,255,0.8);font-size:.62rem;">Facebook Page</p>
+                    </div>
+                </div>
+
+                <!-- Facebook Page Plugin embed (full width, centered) -->
+                <div id="fb-root"></div>
+                <script async defer crossorigin="anonymous"
+                    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v21.0">
+                </script>
+                <div style="background:#fff;display:flex;justify-content:center;align-items:flex-start;width:100%;min-height:500px;overflow:hidden;">
+                    <iframe
+                        name="fa523b3fcbbdd7eb2"
+                        width="560"
+                        height="500"
+                        data-testid="fb:page Facebook Social Plugin"
+                        title="fb:page Facebook Social Plugin"
+                        frameborder="0"
+                        allowtransparency="true"
+                        allowfullscreen="true"
+                        scrolling="no"
+                        allow="encrypted-media"
+                        src="https://www.facebook.com/v21.0/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df34d76260318b6615%26domain%3Ddevelopers.facebook.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Ff5e0a5935f878cbe5%26relation%3Dparent.parent&amp;container_width=766&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61591042955366%26rdid%3Dfu9HldX97tQASPWd%26share_url%3Dhttps%253A%252F%252Fwww.facebook.com%252Fshare%252F19MgmdpSnd%252F%23&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline"
+                        style="border:none;display:block;width:560px;max-width:100%;height:500px;">
+                    </iframe>
+                </div>
+
+                <!-- Card footer -->
+                <div style="padding:18px 24px;border-top:1px solid #e8f0fe;background:#f0f4ff;text-align:center;">
+                    <a href="https://www.facebook.com/profile.php?id=61591042955366"
+                       target="_blank" rel="noopener"
+                       style="display:inline-flex;align-items:center;gap:10px;background:#1877F2;color:#fff;border-radius:50px;padding:12px 28px;font-weight:700;font-size:.97rem;text-decoration:none;box-shadow:0 4px 14px rgba(24,119,242,0.35);"
+                       onmouseover="this.style.boxShadow='0 6px 20px rgba(24,119,242,0.5)'"
+                       onmouseout="this.style.boxShadow='0 4px 14px rgba(24,119,242,0.35)'">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                        </svg>
+                        Follow on Facebook
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ---------- Contact ---------- -->
+<section id="contact">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow-tag">Get in touch</span>
+            <h2>Contact the campaign</h2>
+        </div>
+        <div class="contact-card">
+            <h3>Guru Bhat</h3>
+            <p class="role">Candidate for Ward Councillor, Ward 4 &middot; City of Kawartha Lakes</p>
+            <div class="contact-row">&#9993;&nbsp; <a href="mailto:Oakwoodguru@gmail.com">Oakwoodguru@gmail.com</a></div>
+            <div class="contact-row">&#9742;&nbsp; <a href="tel:7056239323">705-623-9323</a></div>
+            <div class="contact-row" style="border-top:none;padding:12px 0;">
+                <a href="https://www.facebook.com/share/1D6XRGDQnM/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Follow Guru Bhat on Facebook" style="display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:rgba(30,60,100,0.12);color:var(--lake-deep);transition:background .2s;" onmouseover="this.style.background='#1877F2';this.style.color='#fff'" onmouseout="this.style.background='rgba(30,60,100,0.12)';this.style.color='var(--lake-deep)'">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                    </svg>
+                </a>
             </div>
         </div>
     </div>
