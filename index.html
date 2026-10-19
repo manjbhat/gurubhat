@@ -658,7 +658,7 @@ footer{
 <style>
 #flyerPopup{position:fixed;inset:0;z-index:1000;background:rgba(14,30,38,.82);display:flex;align-items:center;justify-content:center;padding:16px;}
 #flyerPopup.hidden{display:none;}
-#flyerPopup .fp-box{position:relative;background:#fff;border-radius:14px;width:100%;max-width:620px;max-height:calc(100vh - 32px);display:flex;flex-direction:column;box-shadow:0 20px 60px rgba(0,0,0,.4);overflow:hidden;}
+#flyerPopup .fp-box{position:relative;background:#fff;border-radius:14px;width:100%;max-width:860px;max-height:calc(100vh - 32px);display:flex;flex-direction:column;box-shadow:0 20px 60px rgba(0,0,0,.4);overflow:hidden;}
 #flyerPopup .fp-scroll{overflow-y:auto;-webkit-overflow-scrolling:touch;}
 #flyerPopup .fp-scroll img{width:100%;height:auto;display:block;}
 #flyerPopup .fp-scroll img + img{border-top:6px solid var(--cream);}
@@ -670,14 +670,15 @@ footer{
 #flyerPopup .fp-call{background:#E53935;color:#fff;box-shadow:0 6px 18px rgba(229,57,53,.35);text-decoration:none;}
 body.fp-open{overflow:hidden;}
 </style>
-<div id="flyerPopup" role="dialog" aria-modal="true" aria-label="Boil water advisory: free bottled water delivery">
+<div id="flyerPopup" role="dialog" aria-modal="true" aria-label="Guru Bhat campaign flyer">
     <div class="fp-box">
         <button class="fp-close" id="fpClose" aria-label="Close">&times;</button>
         <div class="fp-scroll">
-            <img src="boil_water_delivery.jpeg" alt="Boil Water Advisory — free bottled water delivery for elderly, immunocompromised, and families with infants in Lindsay and the Village of Oakwood. Contact Guru Bhat at 705-623-9323 to arrange delivery.">
+            <img src="note_card_front.jpeg" alt="A personal note from Guru Bhat to his Ward 4 neighbours, with his 3 commitments. Voting October 16 to 26.">
+            <img src="note_card_back.jpeg" alt="2026 voting information: voting opens Friday October 16 at 9:00 AM and closes Monday October 26 at 8:00 PM, by internet or telephone using your Voting PIN.">
         </div>
         <div class="fp-bar">
-            <a class="btn fp-call" href="tel:7056239323">&#9742; Call 705-623-9323</a>
+            <span class="fp-hint">Scroll for voting information &darr;</span>
             <button class="btn" id="fpEnter">Enter Site &rarr;</button>
         </div>
     </div>
