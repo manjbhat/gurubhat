@@ -654,47 +654,6 @@ footer{
 </head>
 <body>
 
-<!-- ---------- Welcome flyer popup ---------- -->
-<style>
-#flyerPopup{position:fixed;inset:0;z-index:1000;background:rgba(14,30,38,.82);display:flex;align-items:center;justify-content:center;padding:16px;}
-#flyerPopup.hidden{display:none;}
-#flyerPopup .fp-box{position:relative;background:#fff;border-radius:14px;width:100%;max-width:860px;max-height:calc(100vh - 32px);display:flex;flex-direction:column;box-shadow:0 20px 60px rgba(0,0,0,.4);overflow:hidden;}
-#flyerPopup .fp-scroll{overflow-y:auto;-webkit-overflow-scrolling:touch;}
-#flyerPopup .fp-scroll img{width:100%;height:auto;display:block;}
-#flyerPopup .fp-scroll img + img{border-top:6px solid var(--cream);}
-#flyerPopup .fp-close{position:absolute;top:10px;right:10px;width:38px;height:38px;border-radius:50%;border:none;background:rgba(22,57,69,.9);color:#fff;font-size:1.3rem;line-height:1;cursor:pointer;z-index:2;box-shadow:0 2px 8px rgba(0,0,0,.3);}
-#flyerPopup .fp-close:hover{background:var(--lake-deep);}
-#flyerPopup .fp-bar{padding:14px 16px;background:var(--cream);border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;}
-#flyerPopup .fp-hint{font-size:.85rem;color:var(--ink-soft);}
-#flyerPopup .fp-bar .btn{padding:12px 22px;width:auto;}
-#flyerPopup .fp-call{background:#E53935;color:#fff;box-shadow:0 6px 18px rgba(229,57,53,.35);text-decoration:none;}
-body.fp-open{overflow:hidden;}
-</style>
-<div id="flyerPopup" role="dialog" aria-modal="true" aria-label="Guru Bhat campaign flyer">
-    <div class="fp-box">
-        <button class="fp-close" id="fpClose" aria-label="Close">&times;</button>
-        <div class="fp-scroll">
-            <img src="note_card_front.jpeg" alt="A personal note from Guru Bhat to his Ward 4 neighbours, with his 3 commitments. Voting October 16 to 26.">
-            <img src="note_card_back.jpeg" alt="2026 voting information: voting opens Friday October 16 at 9:00 AM and closes Monday October 26 at 8:00 PM, by internet or telephone using your Voting PIN.">
-        </div>
-        <div class="fp-bar">
-            <span class="fp-hint">Scroll for voting information &darr;</span>
-            <button class="btn" id="fpEnter">Enter Site &rarr;</button>
-        </div>
-    </div>
-</div>
-<script>
-(function(){
-    var p=document.getElementById('flyerPopup');
-    document.body.classList.add('fp-open');
-    function closeIt(){p.classList.add('hidden');document.body.classList.remove('fp-open');}
-    document.getElementById('fpClose').onclick=closeIt;
-    document.getElementById('fpEnter').onclick=closeIt;
-    p.addEventListener('click',function(e){if(e.target===p)closeIt();});
-    document.addEventListener('keydown',function(e){if(e.key==='Escape')closeIt();});
-})();
-</script>
-
 <header>
     <div class="brand"><span class="dot"></span>GURU BHAT</div>
     <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
@@ -703,7 +662,6 @@ body.fp-open{overflow:hidden;}
         <a href="#commitment">Commitment</a>
         <a href="#volunteer">Volunteer</a>
         <a href="#testimonials">Testimonials</a>
-        <a href="#election">Election Info</a>
         <a href="#gallery">Gallery</a>
         <a href="#events">Events</a>
         <a href="#social">Social Media</a>
@@ -1156,21 +1114,6 @@ body.fp-open{overflow:hidden;}
     window.goSlide=function(n){show(n);}
 })();
 </script>
-
-<!-- ---------- Election Info ---------- -->
-<section id="election" style="background:#fff;padding:60px 0;">
-    <div class="container">
-        <div class="section-head">
-            <span class="eyebrow-tag">How to Vote</span>            
-        </div>
-        <div style="max-width:680px;margin:36px auto 0;background:var(--cream);border-radius:var(--radius);padding:36px 40px;box-shadow:var(--shadow);border-left:5px solid var(--gold);">
-            <h3 style="font-family:'Lora',serif;font-size:1.35rem;color:var(--lake-deep);margin-bottom:14px;">&#128197; Vote Online · October 16–26</h3>
-            <p style="color:var(--ink);line-height:1.75;margin-bottom:14px;">The municipal election takes place <strong>October 26, 2026</strong>. Voting will be open <strong>October 16–26</strong> by internet or phone. You do <strong>not</strong> need to go to a polling station. Every eligible resident of Kawartha Lakes can vote.</p>
-            <p style="color:var(--ink);line-height:1.75;margin-bottom:24px;">More information will be provided ahead of the vote through the City of Kawartha Lakes. You can learn more about the voting process at <a href="https://www.kawarthalakes.ca/election" target="_blank" style="color:var(--lake);font-weight:600;text-decoration:underline;">www.kawarthalakes.ca/election</a>.</p>
-            <a href="https://vreg.registertovoteon.ca/en/home" target="_blank" class="btn" style="display:inline-block;">&#10003; Check if you're registered to vote!</a>
-        </div>
-    </div>
-</section>
 
 <!-- ---------- Gallery ---------- -->
 <section id="gallery" style="background:#fff;padding:60px 0;">
