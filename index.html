@@ -654,6 +654,42 @@ footer{
 </head>
 <body>
 
+<!-- ---------- Welcome popup ---------- -->
+<style>
+#flyerPopup{position:fixed;inset:0;z-index:1000;background:rgba(14,30,38,.82);display:flex;align-items:center;justify-content:center;padding:16px;}
+#flyerPopup.hidden{display:none;}
+#flyerPopup .fp-box{position:relative;background:#fff;border-radius:14px;width:100%;max-width:640px;max-height:calc(100vh - 32px);display:flex;flex-direction:column;box-shadow:0 20px 60px rgba(0,0,0,.4);overflow:hidden;}
+#flyerPopup .fp-scroll{overflow-y:auto;-webkit-overflow-scrolling:touch;}
+#flyerPopup .fp-scroll img{width:100%;height:auto;display:block;}
+#flyerPopup .fp-close{position:absolute;top:10px;right:10px;width:38px;height:38px;border-radius:50%;border:none;background:rgba(22,57,69,.9);color:#fff;font-size:1.3rem;line-height:1;cursor:pointer;z-index:2;box-shadow:0 2px 8px rgba(0,0,0,.3);}
+#flyerPopup .fp-close:hover{background:var(--lake-deep);}
+#flyerPopup .fp-bar{padding:14px 16px;background:var(--cream);border-top:1px solid var(--line);display:flex;align-items:center;justify-content:center;}
+#flyerPopup .fp-bar .btn{padding:12px 26px;width:auto;}
+body.fp-open{overflow:hidden;}
+</style>
+<div id="flyerPopup" role="dialog" aria-modal="true" aria-label="Thank you, Ward 4">
+    <div class="fp-box">
+        <button class="fp-close" id="fpClose" aria-label="Close">&times;</button>
+        <div class="fp-scroll">
+            <img src="thank_you_ward4.jpeg" alt="Thank you, Ward 4, City of Kawartha Lakes. A heartfelt thank you to all the residents of Ward 4 for your trust, support and belief in me. Together we made it happen! Guru Bhat, Ward 4 Councillor.">
+        </div>
+        <div class="fp-bar">
+            <button class="btn" id="fpEnter">Enter Site &rarr;</button>
+        </div>
+    </div>
+</div>
+<script>
+(function(){
+    var p=document.getElementById('flyerPopup');
+    document.body.classList.add('fp-open');
+    function closeIt(){p.classList.add('hidden');document.body.classList.remove('fp-open');}
+    document.getElementById('fpClose').onclick=closeIt;
+    document.getElementById('fpEnter').onclick=closeIt;
+    p.addEventListener('click',function(e){if(e.target===p)closeIt();});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape')closeIt();});
+})();
+</script>
+
 <header>
     <div class="brand"><span class="dot"></span>GURU BHAT</div>
     <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
@@ -1247,16 +1283,11 @@ footer{
 <section id="events" style="background:#f7f8fa;padding:60px 0;">
     <div class="container">
         <div class="section-head">
-            <span class="eyebrow-tag">Voting Is Open &middot; Oct 16&ndash;26</span>
-            <h2>A Personal Note &amp; Voting Information</h2>
+            <span class="eyebrow-tag">Thank You, Ward 4</span>
+            <h2>Together, We Made It Happen</h2>
         </div>
-        <div style="max-width:820px;margin:36px auto 0;display:flex;flex-direction:column;gap:20px;">
-            <div style="border-radius:14px;overflow:hidden;box-shadow:0 6px 28px rgba(0,0,0,0.12);background:#fff;">
-                <img src="note_card_front.jpeg" alt="A personal note from Guru Bhat to his Ward 4 neighbours, with his 3 commitments: a Ward 4 councillor office, regular community meetings, and regular community updates. Voting October 16 to 26." style="width:100%;height:auto;display:block;">
-            </div>
-            <div style="border-radius:14px;overflow:hidden;box-shadow:0 6px 28px rgba(0,0,0,0.12);background:#fff;">
-                <img src="note_card_back.jpeg" alt="2026 voting information: voting opens Friday October 16 at 9:00 AM and closes Monday October 26 at 8:00 PM, by internet or telephone using your Voting PIN. Voting help at City Hall, 26 Francis St Lindsay; Woodville Library, 78 King St; and Little Britain Library, 9 Arena Rd." style="width:100%;height:auto;display:block;">
-            </div>
+        <div style="max-width:720px;margin:36px auto 0;border-radius:14px;overflow:hidden;box-shadow:0 6px 28px rgba(0,0,0,0.12);background:#fff;">
+            <img src="thank_you_ward4.jpeg" alt="Thank you, Ward 4, City of Kawartha Lakes. A heartfelt thank you to all the residents of Ward 4 for your trust, support and belief in me. Together we made it happen! Guru Bhat, Ward 4 Councillor." style="width:100%;height:auto;display:block;">
         </div>
     </div>
 </section>
